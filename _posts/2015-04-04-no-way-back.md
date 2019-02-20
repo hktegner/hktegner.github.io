@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "No way back!"
 date:   2015-04-04 11:15:27 +0000
 categories: life technology
+author: "Henning Tegner"
 ---
 __When Neo took that red pill__, there was no way back up that rabbit hole. And when Adam had a bite of that apple, the knowledge he gained changed his world forever. You may think it's funny that I mention those two stories together, but for me they are about the same thing. They are about the loss of innocence and the fact that sometimes when we learn something new, that knowledge can cause us some grief.
 

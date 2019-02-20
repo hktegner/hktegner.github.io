@@ -13,22 +13,76 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 640KB should be plenty!
+title: The website title
+name: Henning Tegner
 email: henning@tegner.kim
+copyrightFrom: 2015
+copyrightTo: 2019
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://henning.tegner.kim" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: hktegner
-github_username:  hktegner
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Defaults for subsets of files
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _rocket
+  - scope:
+      path: ""
+      type: rocket
+    values:
+      layout: article
+      author_profile: false
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _software
+  - scope:
+      path: ""
+      type: software
+    values:
+      layout: article
+      author_profile: false
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+# Collections
+collections:
+  # Java Rocket Launcher Tutorial
+  rocket:
+    output: true
+    label: rocket
+    permalink: /:collection/:path/
+  # Portfolio of software
+  software:
+    output: true
+    label: software
+    permalink: /:collection/:path/

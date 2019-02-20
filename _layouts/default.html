@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body style="margin: 0px; padding: 0px;">
+
+    <header style="background-color: #BBBBBB; padding: 1em;">
+      {% include header.html %}
+    </header>
+
+    <section style="padding: 1em;">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </section>
+
+    <footer style="width: 100%; color: #BBBBBB; background-color: #444444; padding: 1em; font-size: 1.3em;">
+      {% include footer.html %}
+    </footer>
+
+  </body>
+</html>

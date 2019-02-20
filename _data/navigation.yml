@@ -1,0 +1,9 @@
+main:
+  - title: "640KB"
+    url: /blog/
+  - title: "Rocket"
+    url: /rocket/
+  - title: "Software"
+    url: /software/
+  - title: "About"
+    url: /about/

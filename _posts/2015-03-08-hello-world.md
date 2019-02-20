@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Hello, world!"
 date:   2015-03-08 14:20:08 +0000
 categories: childhood history IT
+author: "Henning Tegner"
 ---
 __Few memories from my childhood__, are as vivid as when I as a teenage boy got my hands on my first computer - an AT 286 with 640KB of memory and a screen with 255 shades of amber. Countless hours were spent in front of that computer, firstly learning to program it, playing games on it, and then later on connecting it to bulletin board systems - the pre-cursor to the internet. Fond memories!
 

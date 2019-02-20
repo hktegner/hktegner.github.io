@@ -1,0 +1,18 @@
+
+{% for row in feature_row %}
+
+<div>
+  <img src="{{ image_path }}" alt="{{ alt }}"/>
+  <h1>{{ title }}</h1>
+  <p>{{ except }}</p>
+</div>
+
+{% endfor %}
+
+{% comment %}
+feature_row:
+  - image_path: /assets/images/teaser_300x200.jpg
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+{% comment %}

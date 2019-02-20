@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "A brief note on the name of the blog"
 date:   2015-03-16 16:33:54 +0000
 categories: history IT
+author: "Henning Tegner"
 ---
 If you're interested in computers or technlogy, you will know where it's from. Technology is often driven by brilliant visionary people, but sometimes those people people get it very very wrong. The quotes below illustrate what I mean.
 
