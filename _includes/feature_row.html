@@ -1,18 +1,27 @@
+<table class="width: 100%">
+  <tr>
 
-{% for row in feature_row %}
+{% for row in page[include.id] %}
 
-<div>
-  <img src="{{ image_path }}" alt="{{ alt }}"/>
-  <h1>{{ title }}</h1>
-  <p>{{ except }}</p>
-</div>
+  <td>
+      {% if row.url %}
+      <a href="{{ row.url }}">
+        {% endif %}
+      {% if row.image_path %}
+      <img src="{{ row.image_path }}" alt="{{ row.alt }}"/>
+      {% endif %}
+      {% if row.title %}
+      <h2>{{ row.title }}</h2>
+      {% endif %}
+      {% if row.url %}
+      </a>
+      {% endif %}
+      {% if row.excerpt %}
+      <p>{{ row.excerpt }}</p>
+      {% endif %}
+  </td>>
 
 {% endfor %}
 
-{% comment %}
-feature_row:
-  - image_path: /assets/images/teaser_300x200.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-{% comment %}
+</tr>
+</table>

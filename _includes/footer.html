@@ -1,19 +1,29 @@
-<div id="footer-left">
-  <div id="footer-title">
-    {{ site.title }}
-  </div>
-  <div id="copyright-statement">
-    &copy; {{ site.copyrightFrom }}-{{ site.copyrightTo }} {{ site.name }}
+<div id="footer-left" class="w3-col m6">
+    <div id="footer-site-title">
+      {{ site.title }}
+    </div>
+    <div id="footer-copyright-statement">
+      &copy; {{ site.copyrightFrom }}-{{ site.copyrightTo }} {{ site.name }}
+    </div>
+</div>
+
+<div id="footer-right" class="w3-col m6">
+  <div id="social-networks" class="fa-3x">
+    <a href="{{ site.twitter_address }}" target="_blank">
+        <i class="fab fa-twitter" data-fa-transform="shrink-7 down-0 right-0.5" data-fa-mask="fas fa-circle" ></i>
+    </a>
+    <a href="{{ site.facebook_address }}" target="_blank">
+      <i class="fab fa-facebook-f" data-fa-transform="shrink-7 down-0 right-0.5" data-fa-mask="fas fa-circle"></i>
+    </a>
+    <a href="{{ site.linkedin_address }}" target="_blank">
+      <i class="fab fa-linkedin-in" data-fa-transform="shrink-7 down-0 right-0.0" data-fa-mask="fas fa-circle"></i>
+    </a>
+    <a href="{{ site.gitlab_address }}" target="_blank">
+      <i class="fab fa-gitlab" data-fa-transform="shrink-7 down-0 right-0.0" data-fa-mask="fas fa-circle"></i>
+    </a>
+    <a href="{{ site.email_address }}">
+      <i class="fas fa-envelope" data-fa-transform="shrink-7 down-0 right-0.0" data-fa-mask="fas fa-circle"></i>
+    </a>
   </div>
 </div>
-<div id="footer-right">
-  <div id="social-networks">
-      <span><i class="fab fa-twitter"></i> hktegner</span>
-      <span><i class="fab fa-facebook-f"></i> facebook</span>
-      <span><i class="fab fa-linkedin-in"></i> linkedin</span>
-      <span><i class="fab fa-gitlab"></i> gitlab</span>
-      <span><i class="fab fa-stack-overflow"></i> stackoverflow</span>
-      <span><i>{ }</i> exercism</span>
-      <span><i class="fas fa-envelope"></i> email</span>
-  </div>
 </div>

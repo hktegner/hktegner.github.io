@@ -1,33 +1,28 @@
 ---
 layout: default
-title: The Title of the Page!
+title: Streams of work
 date: 2019-01-28T23:24:41-04:00
-header:
-  overlay_color: "#00000000"
-  overlay_filter: "0.0"
-  overlay_image: /assets/images/home_road_ahead.jpg
-excerpt: This is the executive summary. It will be used in archive and listing pages.
 intro:
-  - excerpt: This is the intro blurb. Please select from the below choices.
-feature_row:
+  - excerpt: So much to do. So little time.
+feature_rows:
   - image_path: /assets/images/teaser_300x200.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    alt: "Writing"
+    title: "Writing"
+    excerpt: "My blog for venting about technology, design and life."
+    url: "/blog/"
+    type: "left"
   - image_path: /assets/images/teaser_300x200.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+    alt: ""
+    title: "Teaching"
+    excerpt: "My attempt at making tech easier to grasp."
+    url: "/rocket/"
+    type: "left"
   - image_path: /assets/images/teaser_300x200.jpg
-    title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    title: "Developing"
+    excerpt: "Hoping to produce something worthwhile."
+    url: "/software/"
+    type: "right"
 ---
-<section class="site-description">
-{{ site.description }}
-</section>
+So much to do. So little time.
 
-{% include feature_row id="intro" type="center" %}
-{% include feature_row %}
+{% include feature_row.html id="feature_rows" %}

@@ -1,6 +1,9 @@
-<nav>
-  <a href="/">{{ site.title }}</a>
-  {% for link in site.data.navigation.main %}
-    <a href="{{ link.url }}">{{ link.title }}</a>
-  {% endfor %}
-</nav>
+  <div id="header-site-title" class="w3-col m4">
+    <a href="/">{{ site.title }}</a>
+  </div>
+
+  <nav class="w3-col m8">
+    {% for link in site.data.navigation.main %}
+      <a href="{{ link.url }}">{{ link.title }}</a>
+    {% endfor %}
+  </nav>
