@@ -5,21 +5,21 @@ date: 2019-01-28T23:24:41-04:00
 intro:
   - excerpt: So much to do. So little time.
 feature_rows:
-  - image_path: /assets/images/teaser_300x200.jpg
+  - image_path: /assets/images/teaser_150x100.jpg
     alt: "Writing"
     title: "Writing"
-    excerpt: "My blog for venting about technology, design and life."
+    excerpt: "Thoughts about technology, design and life."
     url: "/blog/"
     type: "left"
-  - image_path: /assets/images/teaser_300x200.jpg
+  - image_path: /assets/images/teaser_150x100.jpg
     alt: ""
     title: "Teaching"
     excerpt: "My attempt at making tech easier to grasp."
     url: "/rocket/"
     type: "left"
-  - image_path: /assets/images/teaser_300x200.jpg
+  - image_path: /assets/images/teaser_150x100.jpg
     title: "Developing"
-    excerpt: "Hoping to produce something worthwhile."
+    excerpt: "Bits of software."
     url: "/software/"
     type: "right"
 ---

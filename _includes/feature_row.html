@@ -1,9 +1,8 @@
-<table class="width: 100%">
-  <tr>
+<div style="display: block">
 
 {% for row in page[include.id] %}
 
-  <td>
+  <div style="display: inline-block;">
       {% if row.url %}
       <a href="{{ row.url }}">
         {% endif %}
@@ -19,9 +18,8 @@
       {% if row.excerpt %}
       <p>{{ row.excerpt }}</p>
       {% endif %}
-  </td>>
+  </div>
 
 {% endfor %}
 
-</tr>
-</table>
+</div>
