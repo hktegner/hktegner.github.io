@@ -42,10 +42,86 @@ $footer-background-colour: #888;
 $footer-border-top: 1px solid #7778;
 
 // credits defs
-$credits-foreground-colour: #444;
+$credits-foreground-colour: #aaa;
 $credits-background-colour: #222;
-$credits-font-size: 12pt;
+$credits-font-size: 1em;
 
+// feature defs
+$feature-title-font-stack: Georgia, "Sans Serif";
+$feature-title-color: orange;
+$feature-excerpt-font-stack: Arial, Helvetica;
+
+$feature-para-font-stack: Georgia, "Sans Serif";
+$feature-para-font-size: 3em;
+$feature-para-color: #000;
+
+// page defs
+$page-title-font-stack: Georgia, "Sans Serif";
+$page-title-font-size: 3em;
+$page-title-color: #fff;
+
+$page-para-font-stack: Georgia, "Sans Serif";
+$page-para-font-size: 3em;
+$page-para-color: #fff;
+
+// article defs
+$article-title-font-stack: Georgia, "Sans Serif";
+$article-title-font-size: 2.5em;
+$article-title-color: #000;
+
+h1 {
+    color: $page-title-color;
+    font-family: $page-title-font-stack;
+    font-size: $page-title-font-size;
+}
+
+p {
+    color: $page-para-color;
+    font-family: $page-para-font-stack;
+    font-size: $page-para-font-size;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: #fff0;
+}
+
+a:visited {
+    text-decoration: underline;
+    text-decoration-color: #fff0;
+}
+
+a:hover {
+    color: $default-selection-colour;
+    text-decoration: underline;
+    text-decoration-color: $default-selection-colour;
+}
+
+.feature-row {
+    img {
+        width: 100%;
+    }
+
+    .image-label {
+        font-size: 0.75em;
+    }
+
+    p {
+        color: $feature-para-color;
+        font-family: $feature-para-font-stack;
+    }
+}
+
+.feature-title {
+    font-family: $feature-title-font-stack;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.feature-excerpt {
+    font-family: $feature-excerpt-font-stack;
+    font-size: 1em;
+}
 
 // site styling
 
@@ -104,18 +180,24 @@ nav {
     padding: $default-padding;
     color: $content-foreground-colour;
     background-color: $content-background-colour;
+    background: radial-gradient(#FFF, #000);
+    font-family: Georgia;
+
     font-family: $content-font-stack;
-    text-shadow: #000 2,2 5
+    text-shadow: #000 2,2 5;
 
     h1 {
+        font-family: Georgia;
         font-size: 2em;
     }
 
     h2 {
+        font-family: Georgia;
         font-size: 1.5em;
     }
 
     p {
+        font-family: Georgia;
         font-size: 1em;
     }
 }
@@ -130,10 +212,15 @@ nav {
 
 footer {
     display: flex;
+    flex-direction: row;
     padding: $default-padding;
     color: $footer-foreground-colour;
     background-color: $footer-background-colour;
     border-top: $footer-border-top;
+}
+
+#footer-left {
+    vertical-align: middle;
 }
 
 #footer-right {
@@ -163,4 +250,12 @@ footer {
 
 .pull-right {
     float: right;
+}
+
+.shadow-box {
+    width: 100%;
+    padding: $default-padding;
+    margin: 10px;
+    box-shadow: 1em 1em 1em #111;
+    background-color: white;
 }

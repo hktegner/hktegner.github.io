@@ -2,21 +2,20 @@
 
 {% for row in page[include.id] %}
 
-  <div style="display: inline-block; text-align: center;">
-      {% if row.url %}
-      <a href="{{ row.url }}">
-        {% endif %}
+  <div class="shadow-box feature-row" style="display: inline-block; text-align: center;">
       {% if row.image_path %}
-      <img src="{{ row.image_path }}" alt="{{ row.alt }}"/>
+      <a href="{{ row.url }}">
+        <img src="{{ row.image_path }}" alt="{{ row.alt }}">
+      </a>
+      <div class="image-label">Photo by rawpixel on Unsplash</div>
       {% endif %}
       {% if row.title %}
-      <h2>{{ row.title }}</h2>
-      {% endif %}
-      {% if row.url %}
+      <a href="{{ row.url }}">
+        <h2 class="feature-title">{{ row.title }}</h2>
       </a>
       {% endif %}
       {% if row.excerpt %}
-      <p>{{ row.excerpt }}</p>
+      <p class="feature-excerpt">{{ row.excerpt }}</p>
       {% endif %}
   </div>
 
