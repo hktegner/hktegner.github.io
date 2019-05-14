@@ -1,261 +1,65 @@
 ---
 ---
 
-// common defs
-$font-stack: Helvetica, sans-serif;
-$content-font-stack: Cambria, Georgia, sans-serif, Helvetica;
-$default-padding: 1em;
-$default-icon-spacing: 0.5em;
-$default-selection-colour: #fa0;
+$top-frame-bg-colour: #8af;
+$bottom-frame-bg-colour: #bbb;
+$credits-frame-bg-color: #000;
 
-// heading defs
-$header-foreground-colour: #444;
-$header-background-colour: #eee;
-$header-site-title-font-size: 2em;
-$header-site-title-font-weight: bold;
-$header-nav-font-size: 1.7em;
-$header-nav-font-weight: none;
-$header-border-bottom: 1px solid #ddd8;
-$header-nav-link-border-bottom: 0.2em solid;
-$header-nav-link-normal-colour: #fff0;
-$header-nav-link-hover-colour: $default-selection-colour;
-%header-links {
-    font-family: $font-stack;
-    a {
-        text-decoration: none;
-    }
-    a:visited {
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: none;
-    }
+.header {
+    grid-area: header;
+    background-color: $top-frame-bg-colour;
+    color: #000;
 }
 
-// content defs
-$content-foreground-colour: #000;
-$content-background-colour: #fff;
-
-// footer defs
-$footer-foreground-colour: #333;
-$footer-background-colour: #888;
-$footer-border-top: 1px solid #7778;
-
-// credits defs
-$credits-foreground-colour: #aaa;
-$credits-background-colour: #222;
-$credits-font-size: 1em;
-
-// feature defs
-$feature-title-font-stack: Georgia, "Sans Serif";
-$feature-title-color: orange;
-$feature-excerpt-font-stack: Arial, Helvetica;
-
-$feature-para-font-stack: Georgia, "Sans Serif";
-$feature-para-font-size: 3em;
-$feature-para-color: #000;
-
-// page defs
-$page-title-font-stack: Georgia, "Sans Serif";
-$page-title-font-size: 3em;
-$page-title-color: #fff;
-
-$page-para-font-stack: Georgia, "Sans Serif";
-$page-para-font-size: 3em;
-$page-para-color: #fff;
-
-// article defs
-$article-title-font-stack: Georgia, "Sans Serif";
-$article-title-font-size: 2.5em;
-$article-title-color: #000;
-
-h1 {
-    color: $page-title-color;
-    font-family: $page-title-font-stack;
-    font-size: $page-title-font-size;
+.left {
+    grid-area: left;
+    background-color:$top-frame-bg-colour;
+    color: #222;
 }
 
-p {
-    color: $page-para-color;
-    font-family: $page-para-font-stack;
-    font-size: $page-para-font-size;
+.main-container {
+    grid-area: main;
+    background-color: $top-frame-bg-colour;
 }
 
-a {
-    text-decoration: underline;
-    text-decoration-color: #fff0;
+.main {
+    background-color: #fff;
+    color: #000;
+    min-width: 30cr;
+    border-width: 10px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 30px 1px #0008 inset;
 }
 
-a:visited {
-    text-decoration: underline;
-    text-decoration-color: #fff0;
+.right {
+    grid-area: right;
+    background-color: $top-frame-bg-colour;
+    color: #444;
 }
 
-a:hover {
-    color: $default-selection-colour;
-    text-decoration: underline;
-    text-decoration-color: $default-selection-colour;
+.footer {
+    grid-area: footer;
+    background-color: #bbb;
+    color: #222;
 }
 
-.feature-row {
-    img {
-        width: 100%;
-    }
-
-    .image-label {
-        font-size: 0.75em;
-    }
-
-    p {
-        color: $feature-para-color;
-        font-family: $feature-para-font-stack;
-    }
+.credits {
+    grid-area: credits;
+    background-color: #000;
+    color: #fff;
 }
-
-.feature-title {
-    font-family: $feature-title-font-stack;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.feature-excerpt {
-    font-family: $feature-excerpt-font-stack;
-    font-size: 1em;
-}
-
-// site styling
 
 body {
-    margin: 0px;
-    font-family: $font-stack;
-    background-color: #fff;
-}
-
-header {
-    display: flex;
-    padding: $default-padding;
-    vertical-align: middle;
-    background-color: $header-background-colour;
-    color: $header-foreground-colour;
-    border-bottom: $header-border-bottom;
-}
-
-#header-site-title {
-    @extend %header-links;
-
-    //padding: $default-padding;
-    font-size: $header-site-title-font-size;
-    font-weight: $header-site-title-font-weight;
-}
-
-nav {
-    @extend %header-links;
-
-    font-size: $header-nav-font-size;
-    vertical-align: middle;
-    text-align: right;
-
-    a {
-        display: inline-block;
-
-        margin-left: $default-icon-spacing;
-        margin-right: $default-icon-spacing;
-        border-bottom: $header-nav-link-border-bottom;
-        border-bottom-color: $header-nav-link-normal-colour;
-    }
-
-    a:visited {
-        border-bottom: $header-nav-link-border-bottom;
-        border-bottom-color: $header-nav-link-normal-colour;
-    }
-
-    a:hover {
-        color: $default-selection-colour;
-        border-bottom: $header-nav-link-border-bottom;
-        border-bottom-color: $header-nav-link-hover-colour;
-    }
-}
-
-#main-block {
-    padding: $default-padding;
-    color: $content-foreground-colour;
-    background-color: $content-background-colour;
-    background: radial-gradient(#FFF, #000);
-    font-family: Georgia;
-
-    font-family: $content-font-stack;
-    text-shadow: #000 2,2 5;
-
-    h1 {
-        font-family: Georgia;
-        font-size: 2em;
-    }
-
-    h2 {
-        font-family: Georgia;
-        font-size: 1.5em;
-    }
-
-    p {
-        font-family: Georgia;
-        font-size: 1em;
-    }
-}
-
-#sidebar-left {
-    float: left;
-}
-
-#sidebar-right {
-    float: right;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    padding: $default-padding;
-    color: $footer-foreground-colour;
-    background-color: $footer-background-colour;
-    border-top: $footer-border-top;
-}
-
-#footer-left {
-    vertical-align: middle;
-}
-
-#footer-right {
-    vertical-align: middle;
-}
-
-#social-networks {
-    float: right;
-
-    a {
-        text-decoration: none;
-    }
-}
-
-#credits {
-    padding: $default-padding;
-    text-align: center;
-    width: 100%;
-    color: $credits-foreground-colour;
-    background-color: $credits-background-colour;
-    font-size: $credits-font-size;
-}
-
-.pull-left {
-    float: left;
-}
-
-.pull-right {
-    float: right;
-}
-
-.shadow-box {
-    width: 100%;
-    padding: $default-padding;
-    margin: 10px;
-    box-shadow: 1em 1em 1em #111;
-    background-color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "left main main right"
+        "footer footer footer footer"
+        "credits credits credits credits";
 }

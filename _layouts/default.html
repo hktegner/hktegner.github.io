@@ -5,34 +5,35 @@
   </head>
   <body>
 
-    <header class="w3-row">
+    <div class="header">
       {% include header.html %}
-    </header>
-
-    <div id="main-block" class="w3-row">
-
-    <section id="sidebar-left" class="w3-col m3">
-      {% include sidebar_left.html %}
-    </section>
-
-    <section id="content" class="w3-col m6">
-      <h1>{{ page.title }}</h1>
-      {{ content }}
-    </section>
-
-    <section id="sidebar-right" class="w3-col m3">
-      {% include sidebar_right.html %}
-    </section>
-
     </div>
 
-    <footer class="w3-row">
-      {% include footer.html %}
+    <div class="left">
+      left sidebar
+    </div>
+
+    <!-- 
+      wrap main in a container and set the background colour to 
+      the background colour of the surrounding areas
+    -->
+    <div class="main-container">
+      <div class="main">
+          {{ content }}
+      </div>
+    </div>
+
+    <div class="right">
+      right sidebar
+    </div>
+
+    <div class="footer">
+      footer
     </footer>
 
-    <section id="credits">
-        {% include credits.html %}
-    </section>
+    <div class="credits">
+        credits
+    </div>
   
   </body>
 </html>

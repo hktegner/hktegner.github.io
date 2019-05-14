@@ -2,28 +2,20 @@
 layout: default
 title: Streams of work
 date: 2019-01-28T23:24:41-04:00
-intro:
-  - excerpt: So much to do. So little time.
-feature_rows:
-  - image_path: /assets/images/rawpixel-192251-unsplash.jpg
-    alt: "Writing"
-    title: "Writing"
-    excerpt: "Thoughts about technology, design and life."
-    url: "/blog/"
-    type: "left"
-  - image_path: /assets/images/jeshoots-com-436787-unsplash.jpg
-    alt: ""
-    title: "Teaching"
-    excerpt: "My attempt at making tech easier to grasp."
-    url: "/rocket/"
-    type: "left"
-  - image_path: /assets/images/alejandro-escamilla-6-unsplash.jpg
-    alt: ""
-    title: "Developing"
-    excerpt: "Bits of software."
-    url: "/software/"
-    type: "right"
 ---
-So much to do. So little time.
+This is the first paragraph of text. It should go on for as long as required to fulfil the purpose of evaluating how to typeset this page. This means there
+must be a meaningful amount of text, so that it can span several lines across multiple devices. The first paragraph will also be used as an excerpt for any
+teasers for this page.
 
-{% include feature_row.html id="feature_rows" %}
+This is the second paragraph. This is the continuation of the story. This is where we delve deeper into the subject matter and perhaps present a code sample
+like this:
+
+## Heading 2
+
+```
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.printf("Hello, world!%n");
+  }
+}
+```

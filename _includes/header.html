@@ -1,8 +1,8 @@
-  <div id="header-site-title" class="w3-col m4">
+  <div class="header-site-title">
     <a href="/">{{ site.title }}</a>
   </div>
 
-  <nav class="w3-col m8">
+  <nav class="header-navigation">
     {% for link in site.data.navigation.main %}
       <a href="{{ link.url }}">{{ link.title }}</a>
     {% endfor %}
